@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Hello, WebVR! • A-Frame</title>
     <meta name="viewport" content="width=device-width">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="scripts/main.js" defer></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <a-scene background="color: #333333">
-      <a-box id="myBox"
-        width="1"
-        height="1"
-        depth="1"
-        color="#ACECF7" 
-        position="0 1.5 -2"
-        rotation="20 45 20"
-        shadow>
-      </a-box>
+        <a-box id="myBox" width="1" height="1" depth="1" color="#ACECF7" position="0 1.5 -2" rotation="20 45 20" shadow>
+        </a-box>
+        <a-plane width="40" height="40" color="#555555" position="0 0 -2" rotation="-90 0 0"></a-plane>
+        <a-cone width="2" height="3" position="2 1 -2" scale="0.3 0.3 0.3" color="#46C3D9" rotation="-15 180 200"></a-cone>
+        <a-sphere radius="0.75" position="-3 1 -4" color="#f4989c"></a-sphere>
+        <a-ring position="-2 3 -5" radius-inner="1" radius-outer="1.75" rotation="45 35 0" color="#42d2b4"></a-ring>
+        <a-torus color="#eac578" arc="220" position="1 1.5 -1" radius="0.75" scale="0.5 0.5 0.5" radius-tubular="0.07"></a-torus>
+        <a-cylinder color="#7b506f" theta-start="50" theta-length="280" side="double" position="1.5 3.5 -4" rotation="65 -50 0"></a-cylinder>
+        <a-circle position="-3 3 -3" radius="0.75" scale="1 1.5 1" rotation="-25 0 0" color="#ffa69e"></a-circle>
     </a-scene>
-  </body>
+</body>
+
 </html>
