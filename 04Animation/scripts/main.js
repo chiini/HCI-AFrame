@@ -11,3 +11,13 @@
  }
 
  setInterval(spin, 16); //equivalent to 60 fps
+
+//Ball Kinda Bounce
+var ball = document.getElementById('ballSphere');
+
+function bounceDown(offsetX, offsetY){
+    ball.object3D.position.x += offsetX;
+    ball.object3D.position.y -= offsetY;
+}
+
+setInterval(bounceDown(1,1), 16);
