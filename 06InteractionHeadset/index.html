@@ -13,6 +13,7 @@
           <img id="wood" src="images/wood.jpg" />
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
+          <img id="slenderman" src="images/Slenderman.png" />
       </a-assets>
 
       <a-camera>
@@ -61,7 +62,16 @@
         src="#wood2"
         shadow>  
       </a-box>
-      <a-image src="images/Slenderman.png" ></a-image>
+      
+      <a-image id="slenderman" src="#slenderman" position="0 4 -15" 
+          
+          animation__mouseenter="property: position; to: 0 2 -1; startEvents: mouseenter; dur: 500;"
+           animation__mouseleave="property: position;
+           to: 0 4 -15; startEvents: mouseleave; dur: 500;"
+           
+      
+      ></a-image>
+      
       <a-plane id="ground"
         position="0 0 -4" 
         rotation="-90 0 0" 

@@ -2,6 +2,7 @@
 var rotationSpeed = 0.001;
 var myOtherBox = document.getElementById('myOtherBox');
 
+
 function spin(){
 	myOtherBox.object3D.rotation.x += rotationSpeed;
 	myOtherBox.object3D.rotation.y += rotationSpeed;
@@ -43,3 +44,4 @@ myOtherBox.addEventListener('mouseleave', function(){
  	grow();
  	console.log('grew');
  });
+
