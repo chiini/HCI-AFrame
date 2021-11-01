@@ -35,6 +35,8 @@ myOtherBox.addEventListener('mouseleave', function(){
  	myOtherBox.object3D.scale.y *= growspeed;
  	myOtherBox.object3D.scale.z *= growspeed;
  	console.log(myOtherBox.object3D.scale);
+     
+    rotationSpeed = 0.1;
  }
 
  myOtherBox.addEventListener('click', function(){ // uses a fuse
